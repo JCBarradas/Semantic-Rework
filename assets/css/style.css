@@ -3,11 +3,11 @@
     padding: 0;
     margin: 0;
 }
-
+/*Add a background color to the main of the page*/
 body {
     background-color: #d9dcd6;
 }
-
+ /*Style the Header*/
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -19,11 +19,12 @@ body {
     display: inline-block;
     font-size: 48px;
 }
-
+/*turn leters "SEO" into a different colour*/
 .header h1 .seo {
     color: #d9dcd6;
 }
-/*for the class .header selectors i have swapped "div" to "nav" which is a semantic element. lines:27,35,39 */
+/*for the class .header selectors swapp"div" to "nav" which is a semantic element. lines:27,35,39 
+align the nav bar inline */
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -40,16 +41,17 @@ body {
     display: inline-block;
     margin-left: 25px;
 }
-
+/*Style all anchor tags*/
 a {
     color: #ffffff;
     text-decoration: none;
 }
-
+/*Style all paragraph tags*/
 p {
     font-size: 16px;
+    color: #ffffff;
 }
-
+/*style figure image*/
 .hero {
     height: 800px;
     width: 100%;
@@ -58,25 +60,24 @@ p {
     background-size: cover;
     background-position: center;
 }
-
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
+/*configure the box size to insert the article section*/
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
+/*position img to the left of section*/
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+/*position img to the right of the section*/
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
 
-
-
+/* style the 3 'content' sections*/
 .search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
@@ -84,7 +85,15 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
-}
+    }
+    .search-engine-optimization img {
+    max-height: 200px;
+    }
+    .search-engine-optimization h2 {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
+
 
 .online-reputation-management {
     margin-bottom: 20px;
@@ -93,7 +102,14 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
-}
+    }
+    .online-reputation-management img {
+    max-height: 200px;
+    }
+    .online-reputation-management h2 {
+        margin-bottom: 20px;
+        font-size: 36px;
+    }
 
 .social-media-marketing {
     margin-bottom: 20px;
@@ -102,35 +118,16 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
-}
-
-.search-engine-optimization img {
+    }
+    .social-media-marketing img {
     max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+    }
+    .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
-}
+    }
 
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
+/*configure the box sise to insert the aside sections*/
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -141,55 +138,55 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-
+/*style all 3 "aside" sections*/
 .benefit-lead {
     margin-bottom: 32px;
     color: #ffffff;
 }
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
 .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
 }
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
+.benefit-lead img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
 }
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
 .benefit-lead img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
+.benefit-brand {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+.benefit-brand h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
 .benefit-brand img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
+ 
+.benefit-cost {
+    margin-bottom: 32px;
+    color: #ffffff;
+}
+.benefit-cost h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
 .benefit-cost img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
-
+/*Style the footer using the same font as header*/
 .footer {
     padding: 30px;
     clear: both;
